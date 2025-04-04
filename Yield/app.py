@@ -31,10 +31,10 @@ if 'page' not in st.session_state:
     st.session_state.page = 'Home'
 
 # Load Saved Models
-yearly_model = joblib.load('arimax_yearly_model.pkl')
-user_input_model = joblib.load('arimax_yearly_model.pkl')
-scaler = joblib.load('ENscaler.pkl')
-lr_model = joblib.load('elastic_net_model.pkl')
+yearly_model = joblib.load('Yield/arimax_yearly_model.pkl')
+user_input_model = joblib.load('Yield/arimax_yearly_model.pkl')
+scaler = joblib.load('Yield/ENscaler.pkl')
+lr_model = joblib.load('Yield/elastic_net_model.pkl')
 
 # Define Features and Readable Names
 features = ['TEMP', 'RAINFALL', 'SIZE', 'AUI', 'NITROGEN', 'PHOSPHORUS', 'POTASSIUM']
@@ -65,7 +65,7 @@ min_values = {
 def load_forecast_models(features):
     models = {}
     for feature in features:
-        with open(f'{feature}_arima.pkl', 'rb') as f:
+        with open(f'{feature}_Yield/arima.pkl', 'rb') as f:
             models[feature] = joblib.load(f)
     return models
 
