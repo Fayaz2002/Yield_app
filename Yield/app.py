@@ -11,7 +11,7 @@ def get_img_as_base64(file):
 
 # Encode your local background image
 main_bg_img = get_img_as_base64("Yield/sfield.jpg")  # Replace with your image file name
-
+st.image("sfield.jpg", caption="Rice Field", use_column_width=True)
 # Add this CSS for the main background
 page_bg_img = f"""
 <style>
