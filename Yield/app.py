@@ -303,7 +303,7 @@ if st.session_state.page == 'Home':
         with col1:
             if st.button("Future Rice Yield Predictions 🔮"):
                 st.session_state.page = 'Future'
-                st.experimental_rerun()
+                st.rerun()
 
         # Adding space before the second button
         st.markdown("<div style='height: 100px;'></div>", unsafe_allow_html=True)
@@ -311,7 +311,7 @@ if st.session_state.page == 'Home':
         with col2:
             if st.button("Predict Rice Yield by Input 💻"):
                 st.session_state.page = 'User Input'
-                st.experimental_rerun()
+                st.rerun()
 
 # Future page
 elif st.session_state.page == 'Future':
@@ -414,7 +414,7 @@ elif st.session_state.page == 'Future':
      st.markdown('<div class="back-button"></div>', unsafe_allow_html=True)
     if st.button("Back to Home 🏠"):
         st.session_state.page = 'Home'
-        st.experimental_rerun()
+        st.rerun()
 
 # CSS for custom containers and button alignment
 # User Input Page
@@ -573,4 +573,4 @@ if st.session_state.page == 'User Input':
     with col2:
         if st.button("Back to Home 🏠"):
             st.session_state.page = 'Home'
-            st.experimental_rerun()
+            st.rerun()
