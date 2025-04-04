@@ -10,7 +10,7 @@ def get_img_as_base64(file):
     return base64.b64encode(data).decode()
 
 # Encode your local background image
-main_bg_img = get_img_as_base64("sfield.jpg")  # Replace with your image file name
+main_bg_img = get_img_as_base64("Yield/sfield.jpg")  # Replace with your image file name
 
 # Add this CSS for the main background
 page_bg_img = f"""
