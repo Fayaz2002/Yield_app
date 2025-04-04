@@ -11,7 +11,19 @@ def get_img_as_base64(file):
 
 # Encode your local background image
 main_bg_img = get_img_as_base64("Yield/sfield.jpg")  # Replace with your image file name
-st.image("sfield.jpg", caption="Rice Field", use_column_width=True)
+st.markdown(
+    f"""
+    <style>
+    .stApp {{
+        background-image: url("data:image/jpg;base64,{main_bg_img}");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }}
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 # Add this CSS for the main background
 page_bg_img = f"""
 <style>
