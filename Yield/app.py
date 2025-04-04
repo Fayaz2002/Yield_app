@@ -65,7 +65,7 @@ min_values = {
 def load_forecast_models(features):
     models = {}
     for feature in features:
-        with open(f'{feature}_Yield/arima.pkl', 'rb') as f:
+        with open(f'Yield/{feature}_arima.pkl', 'rb') as f:
             models[feature] = joblib.load(f)
     return models
 
