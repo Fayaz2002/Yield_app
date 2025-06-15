@@ -6,7 +6,7 @@ This project presents a data-driven approach to forecast rice crop yield in Indi
 ## App Link
 https://riceyield.streamlit.app/
 
-The study utilized historical data from 1950 to 2023 and implemented various machine learning techniques to model the relationships between environmental/agricultural inputs and yield output. To improve usability and practical relevance, the predictive system was also deployed as a Streamlit web application, allowing real-time user interaction.
+The study utilized historical data from 1951 to 2023 and implemented various machine learning techniques to model the relationships between environmental/agricultural inputs and yield output. To improve usability and practical relevance, the predictive system was also deployed as a Streamlit web application, allowing real-time user interaction.
 
 # 🎯 Objectives
 Analyze how climatic and agronomic factors influence rice yield.
