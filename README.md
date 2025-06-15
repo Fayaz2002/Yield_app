@@ -3,6 +3,9 @@
 # 📌 Project Overview
 This project presents a data-driven approach to forecast rice crop yield in India using machine learning models. The primary objective was to assess the influence of climatic and agronomic factors on rice productivity and generate accurate, interpretable predictions. The work formed the core of my MSc dissertation titled "Predictive Modeling of Rice Crop Yield in India: Analyzing the Impact of Climatic and Agronomic Factors."
 
+## App Link
+https://riceyield.streamlit.app/
+
 The study utilized historical data from 1950 to 2023 and implemented various machine learning techniques to model the relationships between environmental/agricultural inputs and yield output. To improve usability and practical relevance, the predictive system was also deployed as a Streamlit web application, allowing real-time user interaction.
 
 # 🎯 Objectives
